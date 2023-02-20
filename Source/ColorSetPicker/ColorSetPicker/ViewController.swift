@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         
         let randomColor = UIColor.randomColor()
         let urlString = "https://palett.es/API/v1/palette/from/\(randomColor.toHexStr())"
+        
         print("\(randomColor.toHexStr())")
         networkingService?.requestGet(urlString: urlString, completionHandler: { (isComplete, colorSet) in
             if(isComplete) {
