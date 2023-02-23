@@ -10,12 +10,15 @@
 		202F6A26299F56160010BE29 /* Memo.strings in Resources */ = {isa = PBXBuildFile; fileRef = 202F6A25299F56160010BE29 /* Memo.strings */; };
 		20B727D7299DFB800042319B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B727D6299DFB800042319B /* AppDelegate.swift */; };
 		20B727D9299DFB800042319B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B727D8299DFB800042319B /* SceneDelegate.swift */; };
-		20B727DB299DFB800042319B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B727DA299DFB800042319B /* ViewController.swift */; };
-		20B727DE299DFB800042319B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B727DC299DFB800042319B /* Main.storyboard */; };
+		20B727DB299DFB800042319B /* RecommendColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B727DA299DFB800042319B /* RecommendColorViewController.swift */; };
 		20B727E0299DFB820042319B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20B727DF299DFB820042319B /* Assets.xcassets */; };
 		20B727E3299DFB820042319B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B727E1299DFB820042319B /* LaunchScreen.storyboard */; };
 		20B727EB299E07F70042319B /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B727EA299E07F70042319B /* NetworkingService.swift */; };
 		20B727EF299E116A0042319B /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B727EE299E116A0042319B /* UIColor+.swift */; };
+		20BFE2A829A49EBB00A63719 /* RecommendColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BFE2A729A49EBB00A63719 /* RecommendColorView.swift */; };
+		20EFE30629A34AF2009FE8A3 /* ViewAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EFE30529A34AF2009FE8A3 /* ViewAble.swift */; };
+		20EFE30929A34C0B009FE8A3 /* UIColorSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EFE30829A34C0B009FE8A3 /* UIColorSetView.swift */; };
+		20EFE30E29A34EBB009FE8A3 /* UIColorUnitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EFE30D29A34EBB009FE8A3 /* UIColorUnitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,13 +26,16 @@
 		20B727D3299DFB800042319B /* ColorSetPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorSetPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B727D6299DFB800042319B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20B727D8299DFB800042319B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		20B727DA299DFB800042319B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		20B727DD299DFB800042319B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20B727DA299DFB800042319B /* RecommendColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendColorViewController.swift; sourceTree = "<group>"; };
 		20B727DF299DFB820042319B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20B727E2299DFB820042319B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20B727E4299DFB820042319B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20B727EA299E07F70042319B /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		20B727EE299E116A0042319B /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		20BFE2A729A49EBB00A63719 /* RecommendColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendColorView.swift; sourceTree = "<group>"; };
+		20EFE30529A34AF2009FE8A3 /* ViewAble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAble.swift; sourceTree = "<group>"; };
+		20EFE30829A34C0B009FE8A3 /* UIColorSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorSetView.swift; sourceTree = "<group>"; };
+		20EFE30D29A34EBB009FE8A3 /* UIColorUnitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorUnitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +68,12 @@
 		20B727D5299DFB800042319B /* ColorSetPicker */ = {
 			isa = PBXGroup;
 			children = (
+				20EFE30429A34ABE009FE8A3 /* Model */,
+				20EFE30329A34AB1009FE8A3 /* View+Controller */,
 				20B727ED299E11570042319B /* Extension */,
 				20B727D6299DFB800042319B /* AppDelegate.swift */,
 				20B727D8299DFB800042319B /* SceneDelegate.swift */,
-				20B727DA299DFB800042319B /* ViewController.swift */,
 				20B727EA299E07F70042319B /* NetworkingService.swift */,
-				20B727DC299DFB800042319B /* Main.storyboard */,
 				20B727DF299DFB820042319B /* Assets.xcassets */,
 				20B727E1299DFB820042319B /* LaunchScreen.storyboard */,
 				20B727E4299DFB820042319B /* Info.plist */,
@@ -82,6 +88,49 @@
 				20B727EE299E116A0042319B /* UIColor+.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		20BFE2A929A49F0F00A63719 /* RecomendColorView */ = {
+			isa = PBXGroup;
+			children = (
+				20B727DA299DFB800042319B /* RecommendColorViewController.swift */,
+				20BFE2A729A49EBB00A63719 /* RecommendColorView.swift */,
+			);
+			path = RecomendColorView;
+			sourceTree = "<group>";
+		};
+		20EFE30329A34AB1009FE8A3 /* View+Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20BFE2A929A49F0F00A63719 /* RecomendColorView */,
+				20EFE30A29A34C68009FE8A3 /* Protocol */,
+				20EFE30729A34BE8009FE8A3 /* ViewComponent */,
+			);
+			path = "View+Controller";
+			sourceTree = "<group>";
+		};
+		20EFE30429A34ABE009FE8A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		20EFE30729A34BE8009FE8A3 /* ViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				20EFE30829A34C0B009FE8A3 /* UIColorSetView.swift */,
+				20EFE30D29A34EBB009FE8A3 /* UIColorUnitView.swift */,
+			);
+			path = ViewComponent;
+			sourceTree = "<group>";
+		};
+		20EFE30A29A34C68009FE8A3 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				20EFE30529A34AF2009FE8A3 /* ViewAble.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +194,6 @@
 				20B727E3299DFB820042319B /* LaunchScreen.storyboard in Resources */,
 				20B727E0299DFB820042319B /* Assets.xcassets in Resources */,
 				202F6A26299F56160010BE29 /* Memo.strings in Resources */,
-				20B727DE299DFB800042319B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,25 +204,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20B727DB299DFB800042319B /* ViewController.swift in Sources */,
+				20B727DB299DFB800042319B /* RecommendColorViewController.swift in Sources */,
 				20B727D7299DFB800042319B /* AppDelegate.swift in Sources */,
 				20B727D9299DFB800042319B /* SceneDelegate.swift in Sources */,
 				20B727EB299E07F70042319B /* NetworkingService.swift in Sources */,
+				20EFE30E29A34EBB009FE8A3 /* UIColorUnitView.swift in Sources */,
+				20EFE30629A34AF2009FE8A3 /* ViewAble.swift in Sources */,
 				20B727EF299E116A0042319B /* UIColor+.swift in Sources */,
+				20BFE2A829A49EBB00A63719 /* RecommendColorView.swift in Sources */,
+				20EFE30929A34C0B009FE8A3 /* UIColorSetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		20B727DC299DFB800042319B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				20B727DD299DFB800042319B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		20B727E1299DFB820042319B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -312,7 +356,6 @@
 				INFOPLIST_FILE = ColorSetPicker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -340,7 +383,6 @@
 				INFOPLIST_FILE = ColorSetPicker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
