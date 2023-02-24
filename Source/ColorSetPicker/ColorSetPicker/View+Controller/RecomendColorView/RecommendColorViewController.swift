@@ -21,41 +21,6 @@ class RecommendColorViewController: UIViewController {
         super.viewDidLoad()
         configureView()
     }
-    
-    func refreshColor() {
-//        networkingService = NetworkingService()
-//
-//        let randomColor = UIColor.randomColor()
-//        let urlString = "https://palett.es/API/v1/palette/from/\(randomColor.toHexStr())"
-//
-//        print("\(randomColor.toHexStr())")
-//        networkingService?.requestGet(urlString: urlString, completionHandler: { (isComplete, colorSet) in
-//            if(isComplete) {
-//                guard let colorSet = colorSet as? [String] else {
-//                    return
-//                }
-//                self.updateColorView(colorSet: colorSet)
-//            }
-//        })
-    }
-    
-    func updateColorView(colorSet: [String]) {
-        print(colorSet)
-//        DispatchQueue.main.async {
-//            self.FirstColorView.backgroundColor = UIColor(hex: colorSet[0])
-//            self.SecondsColorView.backgroundColor = UIColor(hex: colorSet[1])
-//            self.ThirdColorView.backgroundColor = UIColor(hex: colorSet[2])
-//            self.FourthColorView.backgroundColor = UIColor(hex: colorSet[3])
-//            self.FifthColorView.backgroundColor = UIColor(hex: colorSet[4])
-//        }
-    }
-
-//    @IBAction func tappedRefreshButton(_ sender: Any) {
-//        guard let networkingService = networkingService else {
-//            return
-//        }
-//        refreshColor()
-//    }
 }
 
 extension RecommendColorViewController: ViewAble {
@@ -64,7 +29,8 @@ extension RecommendColorViewController: ViewAble {
     }
     
     func drawDesign() {
-          view.addSubview(recommendColorView)
+        view.backgroundColor = .white
+        view.addSubview(recommendColorView)
         
         recommendColorView.translatesAutoresizingMaskIntoConstraints = false
         let centerXOfRecommendColorView = NSLayoutConstraint(item: recommendColorView, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1.0, constant: 0.0)
@@ -73,7 +39,7 @@ extension RecommendColorViewController: ViewAble {
         let heightOfRecommendColorView = NSLayoutConstraint(item: recommendColorView, attribute: .height, relatedBy: .equal, toItem: view, attribute: .height, multiplier: 1.0, constant: 0.0)
         view.addConstraints([centerXOfRecommendColorView, centerYOfRecommendColorView, widthOfRecommendColorView, heightOfRecommendColorView])
         
-        
+        refreshColor()
     }
     
     func setEvent() {
@@ -83,6 +49,39 @@ extension RecommendColorViewController: ViewAble {
 
 extension RecommendColorViewController: RecommendColorViewDelegate {
     func tappedRefreshButton() {
-        print("tapped Refresh Button ")
+        refreshColor()
+    }
+    
+    func refreshColor() {
+        networkingService = NetworkingService()
+
+        let randomColor = UIColor.randomColor()
+        let urlString = "https://palett.es/API/v1/palette/from/\(randomColor.toHexStr())"
+
+        print("\(randomColor.toHexStr())")
+        
+        recommendColorView.startLoading()
+        networkingService?.requestGet(urlString: urlString, completionHandler: { (isComplete, colorSet) in
+            if(isComplete) {
+                guard let colorSet = colorSet as? [String] else {
+                    return
+                }
+                self.updateColorView(colors: colorSet)
+            }
+        })
+    }
+    
+    func updateColorView(colors: [String]) {
+        print(colors)
+        var uiColors: [UIColor] = []
+        colors.forEach{ colorString in
+            if let color = UIColor(hex: colorString) {
+                uiColors.append(color)
+            }
+        }
+        DispatchQueue.main.async {
+            self.recommendColorView.setColorOfColorView(colors: uiColors)
+            self.recommendColorView.completeLoading()
+        }
     }
 }

@@ -60,4 +60,9 @@ extension UIColorSetView {
         }
     }
     
+    func updateColorSetView(colors: [UIColor]) {
+        colors.enumerated().forEach{ index, color in
+            colorViewList[index].changeColor(color)
+        }
+    }
 }

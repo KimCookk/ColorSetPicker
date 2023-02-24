@@ -5,5 +5,14 @@
 
 /*
  StoryBoard -> CodeBase 컨버팅
- 
+ 23. 02. 23 Codebase 리팩토링 : UI 부분 수정 View 요소 객체 생성 및 정의
+ RecommendColorViewController
+ RecommendColorView
+ UIColorSetView
+ UIColorUnitView
+ ViewAble
+ 객체 생성 및 정의
+ 세세한 기능 및 동작 구현 필요
+ -------------------------------------------------------------
  */
+
