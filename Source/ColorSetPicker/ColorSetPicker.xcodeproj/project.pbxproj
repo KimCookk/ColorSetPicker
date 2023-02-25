@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		202F6A26299F56160010BE29 /* Memo.strings in Resources */ = {isa = PBXBuildFile; fileRef = 202F6A25299F56160010BE29 /* Memo.strings */; };
+		20B2F20C29AA4E2D007E947D /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B2F20B29AA4E2D007E947D /* TabbarViewController.swift */; };
 		20B727D7299DFB800042319B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B727D6299DFB800042319B /* AppDelegate.swift */; };
 		20B727D9299DFB800042319B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B727D8299DFB800042319B /* SceneDelegate.swift */; };
 		20B727DB299DFB800042319B /* RecommendColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B727DA299DFB800042319B /* RecommendColorViewController.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		202F6A25299F56160010BE29 /* Memo.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Memo.strings; sourceTree = "<group>"; };
+		20B2F20B29AA4E2D007E947D /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		20B727D3299DFB800042319B /* ColorSetPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorSetPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B727D6299DFB800042319B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20B727D8299DFB800042319B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20B2F20A29AA4DE5007E947D /* TabbarView */ = {
+			isa = PBXGroup;
+			children = (
+				20B2F20B29AA4E2D007E947D /* TabbarViewController.swift */,
+			);
+			path = TabbarView;
+			sourceTree = "<group>";
+		};
 		20B727CA299DFB800042319B = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +112,7 @@
 		20EFE30329A34AB1009FE8A3 /* View+Controller */ = {
 			isa = PBXGroup;
 			children = (
+				20B2F20A29AA4DE5007E947D /* TabbarView */,
 				20BFE2A929A49F0F00A63719 /* RecomendColorView */,
 				20EFE30A29A34C68009FE8A3 /* Protocol */,
 				20EFE30729A34BE8009FE8A3 /* ViewComponent */,
@@ -212,6 +223,7 @@
 				20EFE30629A34AF2009FE8A3 /* ViewAble.swift in Sources */,
 				20B727EF299E116A0042319B /* UIColor+.swift in Sources */,
 				20BFE2A829A49EBB00A63719 /* RecommendColorView.swift in Sources */,
+				20B2F20C29AA4E2D007E947D /* TabbarViewController.swift in Sources */,
 				20EFE30929A34C0B009FE8A3 /* UIColorSetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
